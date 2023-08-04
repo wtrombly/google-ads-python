@@ -20,14 +20,13 @@ the passed in logger instance.
 """
 
 from copy import deepcopy
-from types import SimpleNamespace
 import json
 import logging
 
 from grpc import UnaryUnaryClientInterceptor, UnaryStreamClientInterceptor
 
 from google.ads.googleads.interceptors import Interceptor, mask_message
-from types import SimpleNamespace
+
 
 
 class LoggingInterceptor(
